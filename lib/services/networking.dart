@@ -13,13 +13,14 @@ class NetworkHelper {
     var url = Uri.https('api.openweathermap.org', '/data/2.5/weather', {
       'lat': latitude.toString(),
       'lon': longitude.toString(),
-      'appid': kkApiKey
+      'appid': kkApiKey,
+      'units': "metric"
     });
     var response = await http.get(url);
     if (response.statusCode == 200) {
       return jsonDecode(response.body);
     } else {
-      print("We occure problem: " + (response.statusCode).toString());
+      print("We occure problem: ${response.statusCode}");
     }
   }
 }
