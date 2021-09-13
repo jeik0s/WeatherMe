@@ -20,3 +20,18 @@ const kConditionTextStyle = TextStyle(
 );
 
 const kkApiKey = "4f678fe256273c7c0f0930953f287ba6";
+
+const kkTextFieldInputDecoration = InputDecoration(
+  filled: true,
+  icon: Icon(
+    Icons.location_city,
+    color: Colors.white,
+  ),
+  hintText: "Enter City name",
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.all(
+      Radius.circular(10.0),
+    ),
+    borderSide: BorderSide.none,
+  ),
+);
