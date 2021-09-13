@@ -74,3 +74,10 @@ class _LocationScreenState extends State<LocationScreen> {
     );
   }
 }
+
+
+
+//double temperature = decodedJsonData["main"]["temp"];
+//int condition = decodedJsonData["weather"][0]["id"];
+//String cityName = decodedJsonData["name"];
+//print("City: $cityName, temp: $temperature, condition: $condition");
